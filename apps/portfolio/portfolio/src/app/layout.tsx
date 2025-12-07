@@ -18,16 +18,16 @@ export async function generateMetadata(): Promise<Metadata> {
     icons: {
       icon: [
         { url: "/favicon_io/favicon.ico" },
-        {
-          url: "/favicon_io/favicon-32x32.png",
-          sizes: "32x32",
-          type: "image/png",
-        },
-        {
-          url: "/favicon_io/favicon-16x16.png",
-          sizes: "16x16",
-          type: "image/png",
-        },
+        // {
+        //   url: "/favicon_io/favicon-32x32.png",
+        //   sizes: "32x32",
+        //   type: "image/png",
+        // },
+        // {
+        //   url: "/favicon_io/favicon-16x16.png",
+        //   sizes: "16x16",
+        //   type: "image/png",
+        // },
         {
           url: "/favicon_io/android-chrome-192x192.png",
           sizes: "192x192",

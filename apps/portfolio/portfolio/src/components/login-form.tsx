@@ -6,6 +6,7 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { useFormStatus } from "react-dom"
 import Link from "next/link"
+import { useTheme } from "next-themes"
 
 import { loginWithPassword } from "@/app/login/actions"
 import { Button } from "@/components/ui/button"
@@ -43,6 +44,8 @@ export function LoginForm({
     loginWithPassword,
     initialState
   )
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = React.useState(false)
   const [isGuestPending, startGuestTransition] = React.useTransition()
 
   const handleGuestLogin = React.useCallback(() => {
@@ -77,6 +80,15 @@ export function LoginForm({
     }
   }, [state?.error])
 
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const logoSrc =
+    !mounted || resolvedTheme !== "dark"
+      ? "/sujago_light.png"
+      : "/sujago_dark.png"
+
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card className="overflow-hidden">
@@ -86,7 +98,7 @@ export function LoginForm({
               <div className="flex flex-col items-center text-center">
                 <h1 className="text-2xl font-bold">Welcome Back</h1>
                 <p className="text-balance text-muted-foreground">
-                  Login to your SmilingVictor account
+                  Login to your Sujago account
                 </p>
               </div>
               <div className="grid gap-2">
@@ -138,13 +150,13 @@ export function LoginForm({
           </form>
           <div className="relative hidden min-h-[320px] bg-muted md:block">
             <Image
-              src="/smilingvictor.png"
-              alt="Smiling Victor logo"
+              src={logoSrc}
+              alt="Sujago logo"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
               loading="eager"
               priority
-              className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
         </CardContent>

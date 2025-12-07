@@ -37,7 +37,8 @@ const fallbackSidebarData = {
   user: {
     name: "Guest",
     email: "guest@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/sujago_light.png",
+    avatarDark: "/sujago_dark.png",
     isGuest: false,
   },
   teams: [
@@ -165,6 +166,9 @@ const fallbackSidebarData = {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const { data: portfolioData } = usePortfolioData()
+  const defaultAvatarLight = fallbackSidebarData.user.avatar
+  const defaultAvatarDark =
+    fallbackSidebarData.user.avatarDark ?? fallbackSidebarData.user.avatar
 
   const [user, setUser] = React.useState<typeof fallbackSidebarData.user | null>(
     null
@@ -238,7 +242,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         setUser({
           name: resolvedName,
           email: resolvedEmail,
-          avatar: "/smilingvictor.png",
+          avatar: defaultAvatarLight,
+          avatarDark: defaultAvatarDark,
           isGuest: Boolean(payload.user.isGuest),
         })
       } catch {

@@ -45,6 +45,7 @@ export function NavUser({
     name: string
     email: string
     avatar: string
+    avatarDark?: string
     isGuest: boolean
   }
 }) {
@@ -69,6 +70,8 @@ export function NavUser({
       .join("")
       .slice(0, 2)
       .toUpperCase() || "ME"
+  const avatarLightSrc = user.avatar
+  const avatarDarkSrc = user.avatarDark ?? user.avatar
 
   const handleSignOut = React.useCallback(() => {
     startSigningOut(() => {
@@ -222,7 +225,16 @@ export function NavUser({
                 className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
               >
                 <Avatar className="h-8 w-8 rounded-lg">
-                  <AvatarImage src={user.avatar} alt={nameForUi} />
+                  <AvatarImage
+                    src={avatarLightSrc}
+                    alt={nameForUi}
+                    className="dark:hidden"
+                  />
+                  <AvatarImage
+                    src={avatarDarkSrc}
+                    alt={nameForUi}
+                    className="hidden dark:block"
+                  />
                   <AvatarFallback className="rounded-lg">
                     {initials}
                   </AvatarFallback>
@@ -242,7 +254,16 @@ export function NavUser({
               <DropdownMenuLabel className="p-0 font-normal">
                 <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
                   <Avatar className="h-8 w-8 rounded-lg">
-                    <AvatarImage src={user.avatar} alt={nameForUi} />
+                    <AvatarImage
+                      src={avatarLightSrc}
+                      alt={nameForUi}
+                      className="dark:hidden"
+                    />
+                    <AvatarImage
+                      src={avatarDarkSrc}
+                      alt={nameForUi}
+                      className="hidden dark:block"
+                    />
                     <AvatarFallback className="rounded-lg">
                       {initials}
                     </AvatarFallback>
