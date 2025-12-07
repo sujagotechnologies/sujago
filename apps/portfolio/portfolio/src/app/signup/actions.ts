@@ -23,7 +23,7 @@ export async function signupWithEmail(
   const origin =
     (await headers()).get("origin") ||
     process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://jayant.smilingvictor.com";
+    "https://jayant.sujago.com";
 
   const supabase = await createSupabaseServerClient();
   const { error } = await supabase.auth.signUp({

@@ -23,111 +23,98 @@ export const NAV_ITEMS = [
 ] as const;
 
 export const HERO = {
-  name: "Jayant",
-  role: "Full Stack Developer",
+  name: "Demo Candidate",
+  role: "Full Stack Engineer",
   tagline:
-    "I create beautiful, functional, and user-centered digital experiences. Passionate about clean code, modern technologies, and solving complex problems.",
+    "Building polished demo experiences that show how fast, reliable products come together.",
   blurb:
-    "I love pairing fast iteration with thoughtful craft—shipping early, measuring, and polishing with every release.",
-  location: "Hyderabad, India",
+    "This profile uses placeholder data so the focus stays on the work and how we can collaborate.",
+  location: "Remote / Flexible",
 };
 
 export const ABOUT = {
   summary:
-    "Get to know me better - my journey, passion, and what drives me to create amazing digital experiences.",
+    "Placeholder profile crafted for demos—highlighting process, thinking, and delivery without personal details.",
   personal: [
-    { label: "Name", value: "Jayant" },
-    { label: "Location", value: "Hyderabad, India" },
-    { label: "Experience", value: "1+ Years" },
-    { label: "Email", value: "goyal151002@gmail.com" },
-    { label: "Phone", value: "+91 94134 95328" },
-    { label: "Current Role", value: "Associate Product Engineer" },
+    { label: "Name", value: "Demo Candidate" },
+    { label: "Location", value: "Remote" },
+    { label: "Experience", value: "5+ Years" },
+    { label: "Email", value: "demo@example.com" },
+    { label: "Phone", value: "+00 00000 00000" },
+    { label: "Current Role", value: "Consulting Engineer" },
   ],
   highlights: [
     "Full Stack Web Development",
-    "React.js & Next.js Development",
+    "React & Next.js",
     "TypeScript & JavaScript",
-    "REST API Design & Implementation",
-    "Database Management (MongoDB, Supabase)",
-    "UI/UX Design & User Experience",
+    "API Design & Integration",
+    "Database Design & Data Modeling",
+    "UI/UX Collaboration",
   ],
 };
 
 export const EDUCATION = [
   {
-    school: "A.S.M. Public School, Sri Ganganagar",
-    degree: "Secondary (X), CBSE",
-    period: "2018",
-    location: "Sri Ganganagar",
-    detail: "Percentage: 86.20%",
+    school: "Example University",
+    degree: "B.Tech, Computer Science (Demo)",
+    period: "2019",
+    location: "Remote Campus",
+    detail: "Graduated with honors; focus on scalable systems.",
   },
   {
-    school: "Nosegay Public School, Sri Ganganagar",
-    degree: "Senior Secondary (XII), CBSE",
+    school: "Demo Institute of Technology",
+    degree: "Professional Certification, Product Engineering",
     period: "2020",
-    location: "Sri Ganganagar",
-    detail: "Percentage: 83.20%",
+    location: "Online",
+    detail: "Capstone on building reliable web products.",
   },
   {
-    school: "Kalinga Institute of Industrial Technology, Bhubaneshwar",
-    degree: "Bachelor of Technology (B.Tech), Computer Science & Engineering",
-    period: "2024",
-    location: "Bhubaneshwar",
-    detail: "CGPA: 8.98/10",
+    school: "Continuing Education",
+    degree: "Workshops & Bootcamps",
+    period: "Ongoing",
+    location: "Remote",
+    detail: "Regularly upskilling on cloud, testing, and developer experience.",
   },
 ] as const;
 
 export const EXPERIENCE = [
   {
-    company: "Neuraoak Technologies Private Limited",
-    role: "Product Associate Engineer",
-    period: "Mar 2025 - Present",
-    location: "Hyderabad",
+    company: "Acme Health (Demo)",
+    role: "Product Engineer",
+    period: "2024 - Present",
+    location: "Remote",
     summary:
-      "Building RCM software features using Next.js (TypeScript) and Supabase, improving billing workflows and automating claims processing.",
+      "Builds demo-ready healthcare workflows with secure data seeding, highlighting reliability and speed.",
     bullets: [
-      "Built RCM software features using Next JS (TypeScript) and Supabase, improving billing workflows.",
-      "Automated claims processing, reducing manual effort by 40% and errors by 25%.",
-      "Integrated Supabase for real-time data and auth, cutting backend load by 30%.",
-      "Led UI improvements based on user feedback, boosting satisfaction.",
+      "Prototyped claims and billing flows with Next.js and Supabase to showcase integration patterns.",
+      "Created reusable UI primitives to accelerate future proof-of-concepts across verticals.",
+      "Automated demo data refreshes so client walkthroughs always start from a clean, believable state.",
     ],
   },
   {
-    company: "HighRadius Technologies Private Ltd.",
-    role: "Software Development Intern",
-    period: "Jul 2023 - Nov 2023",
-    location: "Bhubaneswar",
+    company: "Pixel Labs (Demo)",
+    role: "Full Stack Developer",
+    period: "2022 - 2024",
+    location: "Remote",
     summary:
-      "Designed and implemented REST APIs and optimized performance using Java technologies.",
+      "Delivered marketing and commerce proof-of-concepts with a focus on measurable outcomes.",
     bullets: [
-      "Designed and implemented 15+ REST APIs, enabling seamless integration with multiple front-end apps and third-party services.",
-      "Optimized performance using Java, SQL, Hibernate, Struts, and Spring, improving response times by 30%.",
-      "Mastered user requirements, UX design, and backend development for comprehensive product approach.",
+      "Shipped multi-tenant landing pages with A/B testing hooks for quick iteration.",
+      "Integrated REST and GraphQL APIs, translating metrics into actionable dashboards.",
+      "Partnered with design to align component states, loading patterns, and accessibility expectations.",
     ],
   },
   {
-    company: "HighRadius Technologies Private Ltd.",
-    role: "Tech Summer Intern",
-    period: "May 2023 - Jul 2023",
-    location: "Bhubaneswar",
+    company: "Bright Ventures (Demo)",
+    role: "Frontend Developer",
+    period: "2020 - 2022",
+    location: "Remote",
     summary:
-      "Spearheaded the creation of a full-stack web product, ensuring seamless integration across components.",
+      "Built responsive UI kits and onboarding flows used across several demo environments.",
     bullets: [
-      "Spearheaded the creation of a full-stack web product with end-to-end ownership.",
-      "Mastered user requirements, UX design, and backend development for a comprehensive product approach.",
-    ],
-  },
-  {
-    company: "DESIRE FOUNDATION",
-    role: "Public Relations (PR) Intern",
-    period: "Sep 2022 - Aug 2023",
-    location: "Bhubaneswar",
-    summary:
-      "Organized fieldwork campaigns and collaborated with cross-functional teams to enhance internal coordination.",
-    bullets: [
-      "Organized a fieldwork campaign in slum areas, reaching 50+ children and their families, encouraging education.",
-      "Engaged with parents and distributed 100+ notebooks to support education.",
-      "Collaborated with cross-functional teams to organize meetings and enhance internal coordination.",
+      "Developed a design-system starter with theming and motion tokens for rapid prototyping.",
+      "Implemented onboarding and auth journeys with protected routes and role-aware navigation.",
+      "Documented patterns so handoffs to client teams stayed frictionless.",
     ],
   },
 ] as const;
@@ -144,7 +131,7 @@ export const SKILL_SETS = [
       { name: "React", level: 90 },
       { name: "Next.js", level: 85 },
       { name: "Redux", level: 80 },
-      { name: "Tailwind CSS", level: 92 },
+      { name: "Tailwind CSS", level: 90 },
     ],
   },
   {
@@ -154,9 +141,9 @@ export const SKILL_SETS = [
       { name: "Node.js", level: 85 },
       { name: "Express.js", level: 88 },
       { name: "MongoDB", level: 82 },
-      { name: "MySQL", level: 78 },
-      { name: "Supabase", level: 75 },
-      { name: "JWT", level: 80 },
+      { name: "PostgreSQL", level: 80 },
+      { name: "Supabase", level: 78 },
+      { name: "JWT", level: 82 },
     ],
   },
   {
@@ -165,21 +152,21 @@ export const SKILL_SETS = [
     items: [
       { name: "Git", level: 90 },
       { name: "GitHub", level: 88 },
-      { name: "Vercel", level: 85 },
-      { name: "Vite", level: 80 },
-      { name: "NPM", level: 92 },
+      { name: "Vercel", level: 87 },
+      { name: "Vite", level: 82 },
       { name: "PNPM", level: 85 },
-      { name: "Bruno", level: 85 },
+      { name: "Docker", level: 78 },
+      { name: "Storybook", level: 80 },
     ],
   },
   {
     title: "Programming Languages",
     icon: BriefcaseBusiness,
     items: [
+      { name: "JavaScript", level: 92 },
+      { name: "TypeScript", level: 90 },
       { name: "Java", level: 70 },
-      { name: "Markdown", level: 60 },
-      { name: "Python", level: 40 },
-      { name: "C++", level: 60 },
+      { name: "Python", level: 60 },
     ],
   },
 ] as const;
@@ -200,179 +187,117 @@ export const TECH_ICONS = [
 
 export const PROJECTS = [
   {
-    name: "Currency Calculator",
+    name: "Analytics Dashboard (Demo)",
     shortDescription:
-      "Developed a personal calculator to total cash denomination, store multiple calculations per date, and add optional notes.",
+      "Interactive metrics dashboard showcasing auth, charts, and role-aware views.",
     fullDescription:
-      "Developed a personal calculator to total cash denomination, store multiple calculations per date, and add optional notes. Integrated Supabase for backend storage with full CRUD functionality. Built with React and custom external CSS for a clean, responsive UI and smooth user interactions. Features include bundle counting, historical tracking, and data persistence.",
+      "Interactive metrics dashboard used in demos to highlight auth flows, charts, and multi-role permissions. Includes mocked data syncs, filterable tables, and export flows to demonstrate end-to-end product thinking.",
     image: "/placeholder.svg",
-    tags: ["React", "Supabase", "CSS", "CRUD Operations"],
-    githubLink:
-      "https://github.com/goyal1510/jayant-org-in/tree/main/apps/currency-calculator",
-    liveLink: "https://currency-calculator.jayant.org.in/",
+    tags: ["React", "Supabase", "Charts", "RBAC"],
+    githubLink: "https://github.com/example/analytics-dashboard",
+    liveLink: "https://example.com/analytics-dashboard",
   },
   {
-    name: "Custom Drag & Drop Calculator",
-    shortDescription: "Built a drag-and-drop calculator using React and Zustand.",
+    name: "Drag & Drop Builder (Demo)",
+    shortDescription:
+      "Low-code block editor illustrating draggable components and saved layouts.",
     fullDescription:
-      "Built a drag-and-drop calculator using React and Zustand. Added dark mode, backspace, clear all, and duplicate prevention. Styled with Tailwind CSS and optimized with Vite. Features a calculator builder with drag-and-drop functionality.",
+      "A drag-and-drop block editor built with React and Zustand that saves layouts, handles dark mode, and prevents invalid drops. Great for showing how quickly custom internal tools can come together.",
     image: "/placeholder.svg",
     tags: ["React", "Zustand", "Tailwind CSS", "Vite", "Drag & Drop"],
-    githubLink:
-      "https://github.com/goyal1510/jayant-org-in/tree/main/apps/cddc",
-    liveLink: "https://cddc.jayant.org.in/",
+    githubLink: "https://github.com/example/drag-drop-builder",
+    liveLink: "https://example.com/drag-drop-builder",
   },
   {
-    name: "E-commerce Application",
+    name: "Commerce Showcase (Demo)",
     shortDescription:
-      "Built a full-featured e-commerce platform with product browsing, cart, and transactions.",
+      "Feature-complete storefront with catalog, cart, and checkout journeys.",
     fullDescription:
-      "Built a full-featured e-commerce platform with product browsing, cart, and transactions. Developed a responsive UI using React, React Router, and Redux. Integrated an API for real-time product updates. Features include authentication, cart functionality, and product management.",
+      "Feature-complete storefront illustrating catalog filters, cart management, and checkout handoffs. Demonstrates performance-minded React patterns, server interactions, and UX states for busy interfaces.",
     image: "/placeholder.svg",
     tags: ["React", "Redux", "React Router", "API Integration"],
-    githubLink:
-      "https://github.com/goyal1510/jayant-org-in/tree/main/apps/ecommerce",
-    liveLink: "https://ecommerce.jayant.org.in/",
+    githubLink: "https://github.com/example/commerce-showcase",
+    liveLink: "https://example.com/commerce-showcase",
   },
   {
-    name: "Todo App",
-    shortDescription: "Built a task management app with React and Vite.",
+    name: "Task Flow (Demo)",
+    shortDescription: "Task manager highlighting CRUD, filters, and empty states.",
     fullDescription:
-      "Built a task management app with React and Vite. Enabled adding, editing, completing, and deleting tasks. Designed a clean, user-friendly UI for creating, updating, and tracking to-do lists.",
+      "Task management app demonstrating CRUD operations, optimistic updates, and thoughtful empty/loading states. Useful for showing how we balance DX with user empathy in day-to-day tools.",
     image: "/placeholder.svg",
     tags: ["React", "Vite", "Task Management", "CRUD Operations"],
-    githubLink:
-      "https://github.com/goyal1510/jayant-org-in/tree/main/apps/todo-app",
-    liveLink: "https://todo-app.jayant.org.in/",
+    githubLink: "https://github.com/example/task-flow-demo",
+    liveLink: "https://example.com/task-flow",
   },
   {
-    name: "Game Spot",
+    name: "Game Hub (Demo)",
     shortDescription:
-      "Developed a Game Hub featuring three interactive games: Rock Paper Scissors, Dare You, and Tic Tac Toe.",
+      "Lightweight set of casual games to showcase animations and shared state.",
     fullDescription:
-      "Developed a Game Hub featuring three interactive games: Rock Paper Scissors, Dare You, and Tic Tac Toe. Utilized HTML, CSS, and JavaScript to ensure simplicity and ease of use. A gaming platform where users can explore and play various games.",
+      "A playful hub with a few casual games to highlight shared state management, animations, and reusable UI components. Great for demonstrating interaction design without heavy dependencies.",
     image: "/placeholder.svg",
     tags: ["HTML", "CSS", "JavaScript", "Interactive Games"],
-    githubLink:
-      "https://github.com/goyal1510/jayant-org-in/tree/main/apps/game-spot",
-    liveLink: "https://game-spot.jayant.org.in/",
+    githubLink: "https://github.com/example/game-hub-demo",
+    liveLink: "https://example.com/game-hub",
   },
   {
-    name: "Jayant Weather App",
+    name: "Weather Snapshot (Demo)",
     shortDescription:
-      "Developed a weather application using JavaScript, OpenWeather API, and Tailwind CSS.",
+      "Weather lookup with geolocation, search, and graceful loading/error states.",
     fullDescription:
-      "Developed a weather application using JavaScript, OpenWeather API, and Tailwind CSS. Implemented city-based search and geolocation-based weather retrieval. Designed a responsive UI for a seamless experience across devices.",
+      "Weather lookup tool that uses OpenWeather-style responses, geolocation, and search. Emphasizes resilient loading and error states for demos where network conditions vary.",
     image: "/placeholder.svg",
     tags: ["JavaScript", "OpenWeather API", "Tailwind CSS", "Geolocation"],
-    githubLink: "https://github.com/goyal1510/jayant-org-in/tree/main/apps/weather",
-    liveLink: "https://weather.jayant.org.in/",
+    githubLink: "https://github.com/example/weather-snapshot",
+    liveLink: "https://example.com/weather-snapshot",
   },
 ] as const;
 
 export const CERTIFICATES = [
   {
-    name: "Hackerrank Basic",
+    name: "Cloud Foundations (Demo)",
     path: "/placeholder.svg",
-    description: "Certified in Hackerrank Basic assessment",
+    description: "Baseline cloud architecture and deployment practices.",
+    category: "Cloud",
+    issuer: "Example Authority",
+  },
+  {
+    name: "TypeScript Essentials",
+    path: "/placeholder.svg",
+    description: "Typed patterns for scalable frontends and APIs.",
     category: "Programming",
-    issuer: "HackerRank",
+    issuer: "Example Authority",
   },
   {
-    name: "Hackerrank Intermediate",
+    name: "Design Systems Workshop",
     path: "/placeholder.svg",
-    description: "Certified in Hackerrank Intermediate assessment",
-    category: "Programming",
-    issuer: "HackerRank",
+    description: "Built and documented reusable UI primitives.",
+    category: "Design",
+    issuer: "Example Authority",
   },
   {
-    name: "HighRadius Internship Appreciation",
+    name: "API Security Basics",
     path: "/placeholder.svg",
-    description: "Received appreciation for my internship at HighRadius",
-    category: "Internship",
-    issuer: "HighRadius",
+    description: "Securing REST/GraphQL endpoints with auth and monitoring.",
+    category: "Security",
+    issuer: "Example Authority",
   },
   {
-    name: "HighRadius Internship Completion",
+    name: "Product Discovery Bootcamp",
     path: "/placeholder.svg",
-    description: "Successfully completed my internship at HighRadius",
-    category: "Internship",
-    issuer: "HighRadius",
-  },
-  {
-    name: "Full Stack Training",
-    path: "/placeholder.svg",
-    description: "Completed Full Stack training from Internshalla",
-    category: "Training",
-    issuer: "Internshalla",
-  },
-  {
-    name: "HTML & CSS Training",
-    path: "/placeholder.svg",
-    description: "Completed HTML and CSS training from Internshalla",
-    category: "Training",
-    issuer: "Internshalla",
-  },
-  {
-    name: "Interactive JavaScript Training",
-    path: "/placeholder.svg",
-    description: "Completed interactive JavaScript training from Internshalla",
-    category: "Training",
-    issuer: "Internshalla",
-  },
-  {
-    name: "Git and GitHub Training",
-    path: "/placeholder.svg",
-    description: "Completed Git and GitHub training from Internshalla",
-    category: "Training",
-    issuer: "Internshalla",
-  },
-  {
-    name: "DSA JavaScript I",
-    path: "/placeholder.svg",
-    description: "Completed DSA JavaScript Level I training from Internshalla",
-    category: "Training",
-    issuer: "Internshalla",
-  },
-  {
-    name: "DSA JavaScript II",
-    path: "/placeholder.svg",
-    description: "Completed DSA JavaScript Level II training from Internshalla",
-    category: "Training",
-    issuer: "Internshalla",
-  },
-  {
-    name: "React Training",
-    path: "/placeholder.svg",
-    description: "Completed React training from Internshalla",
-    category: "Training",
-    issuer: "Internshalla",
-  },
-  {
-    name: "Node.js and MongoDB Training",
-    path: "/placeholder.svg",
-    description:
-      "Completed Node.js, Express.js, and MongoDB training from Internshalla",
-    category: "Training",
-    issuer: "Internshalla",
+    description: "Rapid validation of product ideas with lean experiments.",
+    category: "Product",
+    issuer: "Example Authority",
   },
 ] as const;
 
 export const CONTACT = {
-  email: "goyal151002@gmail.com",
-  phone: "+91 94134 95328",
-  location: "Hyderabad, India",
+  email: "demo@example.com",
+  phone: "+00 00000 00000",
+  location: "Remote",
   socials: [
-    { label: "GitHub", href: "https://github.com/goyal1510", icon: Github },
-    {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/in/jayant-29714220b/",
-      icon: Linkedin,
-    },
-    {
-      label: "Instagram",
-      href: "https://www.instagram.com/goyal_1510/",
-      icon: Instagram,
-    },
+    { label: "GitHub", href: "https://github.com/example", icon: Github },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/example", icon: Linkedin },
+    { label: "Instagram", href: "https://www.instagram.com/example", icon: Instagram },
   ],
 } as const;
