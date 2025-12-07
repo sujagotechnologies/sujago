@@ -1,11 +1,9 @@
 import { khushiPortfolioData } from "@/lib/portfolio-profiles/khushi-portfolio-data"
 import { jayantPortfolioData } from "@/lib/portfolio-profiles/jayant-portfolio-data"
-import { harshitPortfolioData } from "@/lib/portfolio-profiles/harshit-portfolio-data"
 
 const PORTFOLIO_PROFILES = {
   jayant: jayantPortfolioData,
   khushi: khushiPortfolioData,
-  harshit: harshitPortfolioData,
 } as const
 
 export type PortfolioProfileKey = keyof typeof PORTFOLIO_PROFILES
@@ -14,7 +12,6 @@ export type PortfolioData = (typeof PORTFOLIO_PROFILES)[PortfolioProfileKey]
 const HOSTNAME_MAP: Record<string, PortfolioProfileKey> = {
   "jayant.smilingvictor.com": "jayant",
   "khushi.smilingvictor.com": "khushi",
-  "harshit.smilingvictor.com": "harshit",
 } as const
 
 export const DEFAULT_PORTFOLIO_PROFILE: PortfolioProfileKey = "jayant"
