@@ -1,15 +1,15 @@
 import "@repo/ui/styles.css";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import { HERO } from "@/lib/portfolio-data";
 
-const geist = Geist({ subsets: ["latin"], preload: false });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: `${HERO.name} | Portfolio`,
-  description: "Portfolio site scaffolded from the Turborepo Tailwind starter.",
+  title: "Sujago Technologies Private Limited",
+  description:
+    "Sujago Technologies Private Limited builds fast, reliable web apps, portfolio sites, and product refreshes tailored to modern teams.",
   icons: {
     icon: [
       { url: "/favicon_io/favicon.ico" },
@@ -52,7 +52,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={geist.className}>
+      <body className={spaceGrotesk.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
