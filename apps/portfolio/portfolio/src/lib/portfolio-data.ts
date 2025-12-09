@@ -1,8 +1,10 @@
 
 import { jayantPortfolioData } from "@/lib/portfolio-profiles/jayant-portfolio-data"
+import { neelimaPortfolioData } from "@/lib/portfolio-profiles/neelima-portfolio-data"
 
 const PORTFOLIO_PROFILES = {
   jayant: jayantPortfolioData,
+  neelima: neelimaPortfolioData
 } as const
 
 export type PortfolioProfileKey = keyof typeof PORTFOLIO_PROFILES
@@ -10,6 +12,7 @@ export type PortfolioData = (typeof PORTFOLIO_PROFILES)[PortfolioProfileKey]
 
 const HOSTNAME_MAP: Record<string, PortfolioProfileKey> = {
   "jayant.sujago.com": "jayant",
+  "neelima.sujago.com": "neelima",
 } as const
 
 export const DEFAULT_PORTFOLIO_PROFILE: PortfolioProfileKey = "jayant"
