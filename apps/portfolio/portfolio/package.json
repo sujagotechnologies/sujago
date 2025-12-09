@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack --port 3002",
+    "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start --port 3002",
     "lint": "eslint --max-warnings 0",
